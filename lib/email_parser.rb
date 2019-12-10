@@ -7,10 +7,8 @@ class EmailAddressParser
     @emails = emails
   end
     attr_accessor :emails
-  end
   def parse
-    email_array = @emails.split(" ")
-    email_array.map 
+    email_array = @emails.split(/[,\s]+/)
+    email_array.uniq
 end
-  #emails should go into single arrays
-  #get rid of duplicate emails
+end
