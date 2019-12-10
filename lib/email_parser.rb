@@ -7,7 +7,9 @@ class EmailAddressParser
     def initialize(emails)
     @emails = emails
   end
-  def emails
-    @emails
+    attr_accessor :emails
   end
+  def parse
 end
+  #emails should go into single arrays
+  #get rid of duplicate emails
