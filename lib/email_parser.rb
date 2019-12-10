@@ -10,6 +10,7 @@ class EmailAddressParser
   end
   def parse
     email_array = []
+    @emails.split
 end
   #emails should go into single arrays
   #get rid of duplicate emails
